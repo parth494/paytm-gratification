@@ -1,5 +1,5 @@
 # paytm-gratification
-This project implements the Paytm Gratification Wallet flow. This can be used by a merchant to pay their customers in various forms like cashback, bonus, loyalty points
+This project implements the Paytm Gratification Wallet flow using NodeJS. This can be used by a merchant to pay their customers in various forms like cashback, bonus, loyalty points
 
 Before you start the project, you will have to get the MerchantGuid, SalesWalletGuid and SecretKey from the Paytm Team.
 
