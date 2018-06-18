@@ -1,0 +1,17 @@
+<button id="paytm-button">Pay to User</button>
+<button id="paytm-button2">Get Paytm transaction</button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+document.getElementById('paytm-button').onclick = function(e){
+    $.post("/sendToPaytm", {testKey:"Test"},
+    function(data, status){
+        alert("Data: " + data + "\nStatus: " + status);
+    });
+}
+document.getElementById('paytm-button2').onclick = function(e){
+    $.get("/getPaytm", {testKey:"Test"},
+    function(data, status){
+        alert("Data: " + data + "\nStatus: " + status);
+    });
+}
+</script>
